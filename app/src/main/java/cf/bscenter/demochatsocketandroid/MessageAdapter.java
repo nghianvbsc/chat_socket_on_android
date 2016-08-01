@@ -47,7 +47,7 @@ class MessageAdapter extends BaseAdapter {
             viewHolder.tvMessage = (TextView) newView.findViewById(R.id.tvMessage);
             newView.setTag(viewHolder);
         } else {
-            viewHolder = (ViewHolder) view.getTag();
+            viewHolder = (ViewHolder) viewHolder.getTag();
         }
 
         viewHolder.tvMessage.setText(getItem(index));
